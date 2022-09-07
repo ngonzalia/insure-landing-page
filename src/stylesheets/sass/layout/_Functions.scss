@@ -1,0 +1,104 @@
+.functions {
+  margin: 140px auto;
+  // tablet 
+  @media (min-width: 768px) {
+    margin-top: 350px;
+  }
+  // desktop xl
+  @media (min-width: 1200px) {
+    width: 1110px;
+    margin: 305px auto 150px auto;
+  }
+
+  &__line {
+    margin: 0 auto;
+    width: 150px;
+    height: 1px;
+    background: #c396c6;
+    // desktop xl
+    @media (min-width: 1200px) {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -.042rem;
+    // desktop xl
+    @media (min-width: 1200px) {
+      margin: 63px 0 0 0;
+      text-align: start;
+    }
+  }
+
+  &__cards {
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    // desktop xl
+    @media (min-width: 1200px) {
+      margin: 96px 0 0 0;
+      justify-content: start;
+      gap: 30px;
+    }
+  }
+
+
+  &__how-we-work {
+    margin: 140px auto 0 auto;
+    width: 327px;
+    padding: 72px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #2d2641;
+    background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    // tablet
+    @media (min-width: 768px) {
+      width: 500px;
+      padding: 50px 60px;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      width: 800px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    // desktop xl
+    @media (min-width: 1200px) {
+      width: 1110px;
+      padding: 69px 81px;
+      background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+
+    &-title {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      letter-spacing: -.035rem;
+      // desktop
+      @media (min-width: 1024px) {
+        text-align: start;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      // desktop xl
+      @media (min-width: 1200px) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        letter-spacing: -.049rem;
+        width: 475px;
+      }
+    }
+  }
+}

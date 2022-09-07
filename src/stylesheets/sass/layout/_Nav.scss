@@ -1,0 +1,125 @@
+.nav {
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 3;
+  // desktop
+  @media (min-width: 1024px) {
+    padding: 21px 165px 19px 168px;
+  }
+
+  &__logo {
+    width: 112px;
+    height: 18px;
+  }
+  .logo-container {
+    height: 18px;
+  }
+
+  &__toggles {
+    display: flex;
+    flex-direction: row-reverse;
+    // desktop
+    @media (min-width: 1024px) {
+      display: none !important;
+    }
+  }
+  &__close {
+    &-btn {
+      border: none;
+      background: transparent;
+      height: 32px;
+      width: 32px;
+      margin-right: -32px;
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 587px;
+    background-color: #2c2830;
+    background-image: url('../images/bg-pattern-mobile-nav.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    // desktop
+    @media (min-width: 1024px) {
+      position: relative;
+      width: 447px;
+      height: 40px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      top: auto;
+      left: auto;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin: 40px 0 24px 0;
+      // desktop
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 268px;
+        margin: 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      // desktop
+      @media (min-width: 1024px) {
+        color: #837d88;
+        &:hover {
+          color: #2c2830 !important;
+        }
+      }
+    }
+
+    &-link {
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+      letter-spacing: .085rem;
+      // desktop
+      @media (min-width: 1024px) {
+        color: #837d88;
+        font-size: .813rem;
+        line-height: .938rem;
+        letter-spacing: .094rem;
+      }
+    }
+    .btn-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // desktop
+      @media (min-width: 1024px) {
+        width: 146px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+
+// nav entrance mobile and tablet
+.scale-in-ver-top{@media(max-width: 1023px) {-webkit-animation:scale-in-ver-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-top .5s cubic-bezier(.25,.46,.45,.94) both}}
+@-webkit-keyframes scale-in-ver-top{0%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}@keyframes scale-in-ver-top{0%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}

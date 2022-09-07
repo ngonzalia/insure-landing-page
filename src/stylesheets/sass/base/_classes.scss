@@ -1,0 +1,49 @@
+.hide {
+  display: none;
+}
+.invisible {
+  opacity: 0;
+}
+
+// position
+.center {
+  text-align: center;
+}
+
+// weights
+.w400 {
+  font-weight: 400;
+}
+.w700 {
+  font-weight: 700;
+}
+
+
+// font-family
+.karla {
+  font-family: 'Karla', sans-serif;
+}
+.dm-serif-display {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+
+// colors
+.white {
+  color: #fff;
+}
+.gray {
+  color: #837d88;
+}
+.gunmetal {
+  color: #2d2641;
+}
+.dark-blue {
+  color: #2c2830;
+}
+
+
+.nav-only {
+  height: 100vh !important;
+  overflow: hidden;
+}

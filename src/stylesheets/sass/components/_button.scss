@@ -1,0 +1,64 @@
+.btn {
+  font-size: .813rem;
+  line-height: .938rem;
+  letter-spacing: .094rem;
+  background: none;
+  cursor: pointer;
+  padding: 13px auto 12px auto;
+
+  // type
+  &--mobile {
+    padding: 9px auto 7px auto;
+    width: 327px;
+    height: 56px;
+    // mobile and tablet
+    @media (max-width: 1023px) {
+      font-size: 1.25rem !important;
+      line-height: 2.5rem !important;
+      letter-spacing: .085rem !important;
+      font-weight: 400 !important;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      width: 146px;
+      height: 40px;
+    }
+  }
+  &--plans {
+    width: 146px;
+    height: 40px;
+  }
+  &--how-we-work {
+    width: 160px !important;
+    height: 40px;
+  }
+
+
+  // themes
+  &--light {
+    border: 1.5px solid #fff;
+    color: #fff;
+    background-color: #2d2641;
+    &:hover {
+      background: #fff !important;
+      color: #2c2830 !important;
+      transition: .4s !important;
+    }
+  }
+  &--dark {
+    background: #2c2830;
+    color: #fff;
+    border: 1.5px solid #fff;
+    // desktop
+    @media (min-width: 1024px) {
+      background: #fff;
+      border: 1.5px solid #2c2830;
+      color: #2c2830;
+      &:hover {
+        color: #fff;
+        background: #2c2830;
+        transition: .4s;
+      }
+    }
+  }
+}
